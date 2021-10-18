@@ -8,9 +8,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
       
         <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
@@ -87,12 +87,191 @@
                 </div>
                 <div class="col-sm-6 align-self-center">
                     <img src="img/logo.png" class="img-fluid col-12 col-md-5"/>
-                        <a href="#reserve" class="btn btn-info mt-2 col-12 col-md-6" data-toggle="tooltip" data-html="true" title="Or call us at<br><strong> +91 1233445565</strong>" data-placement="bottom" >Reserve a Table</a> 
-                    
+                    <a class="btn btn-info mt-2 col-12 col-md-6" data-toggle="modal" data-toggle="tool-tip" data-target="#reservemodal" data-html="true" title="Or call us at </br><strong> +91 1233445565</strong>" data-placement="bottom" >Reserve a Table</a> 
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="reservemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" role="content">
+                <div class="modal-header">
+                    <h4 >Reserve Table </h4>
+                    <button class="close ml-auto" type="button" data-dismiss="modal"> &times;</button>
+                </div>
+                <div class="modal-body">
+                    <form class="offser-1">
+                        
+                        <div class="form-group row" >
+                            <label for="choice" class="col-form-label col-4"> No. of Guests</label>
+                            
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">1
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">2
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">3
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">4
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">5
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">6
+                                    </label>
+                                </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-md-2 mb-2">category</div>
+                            <div class="btn-group col-12 col-md-10" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" id="option1" name="option"/> Non-smoking
+                                </label>
+
+                                <label class="btn btn-primary">
+                                    <input type="radio" id="option1" name="option"checked/> Smoking
+                                </label>
+                            </div>
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-md-2 col-form-label"> Time and Date</label>
+                            <div class="col-5 col-md-3 offset-md-1">
+                                <input id="time" class="form-control" placeholder="Time"/>
+                            </div>
+                            <div class="col-7 col-md-5 offset-md-1">
+                                <input id="date" class="form-control" placeholder="date"/>
+                            </div>
+        
+                        </div>
+        
+                        <div class="form-group row">
+                            <div class="ml-auto">
+                                <button class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-success btn-sm ml-auto" type="submit">Reserve a Table</button>
+                            </div>
+                        </div>
+        
+        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <div id="reservemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" role="content">
+                <div class="modal-header">
+                    <h4 >Reserve Table </h4>
+                    <button class="close ml-auto" type="button" data-dismiss="modal"> &times;</button>
+                </div>
+                <div class="modal-body">
+                    <form class="offser-1">
+                        
+                        <div class="form-group row" >
+                            <label for="choice" class="col-form-label col-4"> No. of Guests</label>
+                            
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">1
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">2
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">3
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">4
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">5
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check pl-4" id="choice">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="radio">6
+                                    </label>
+                                </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-md-2 mb-2">category</div>
+                            <div class="btn-group col-12 col-md-10" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" id="option1" name="option"/> Non-smoking
+                                </label>
+
+                                <label class="btn btn-primary">
+                                    <input type="radio" id="option1" name="option"checked/> Smoking
+                                </label>
+                            </div>
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-md-2 col-form-label"> Time and Date</label>
+                            <div class="col-5 col-md-3 offset-md-1">
+                                <input id="time" class="form-control" placeholder="Time"/>
+                            </div>
+                            <div class="col-7 col-md-5 offset-md-1">
+                                <input id="date" class="form-control" placeholder="date"/>
+                            </div>
+        
+                        </div>
+        
+                        <div class="form-group row">
+                            <div class="ml-auto">
+                                <button class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-success btn-sm ml-auto" type="submit">Reserve a Table</button>
+                            </div>
+                        </div>
+        
+        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <div class="container">
 
